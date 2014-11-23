@@ -1,0 +1,94 @@
+html {
+  font-size: 62.5%;
+  font-family: 'PT Sans',Tahoma,sans-serif; }
+  html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans',Tahoma,sans-serif; }
+  html header {
+    font-weight: bold;
+    text-align: center; }
+  html main {
+    width: 1200px;
+    margin: 25px auto;
+    background: rgba(230, 230, 230, 0.5);
+    text-align: center;
+    position: relative; }
+    html main button, html main input {
+      outline: none;
+      border: none; }
+      html main button:focus, html main button:active, html main input:focus, html main input:active {
+        outline: none;
+        border: none; }
+    html main .left-slider-button, html main .right-slider-button {
+      width: 59px;
+      height: 59px;
+      position: absolute;
+      top: 195px; }
+    html main .left-slider-button {
+      left: 0;
+      background: url("../images/sliderArrows.png") 0 0; }
+    html main .right-slider-button {
+      left: 1138px;
+      background: url("../images/sliderArrows.png") -63px -59px; }
+    html main #slider {
+      width: 1200px;
+      height: 400px;
+      overflow: hidden;
+      border: 2px solid #435264;
+      border-radius: 5px; }
+      html main #slider .slides {
+        display: block;
+        width: 4800px;
+        height: 400px;
+        margin: 0;
+        padding: 0; }
+      html main #slider .slide {
+        float: left;
+        list-style-type: none;
+        width: 1200px;
+        height: 400px; }
+        html main #slider .slide > div {
+          width: 100%;
+          height: 100%;
+          color: white;
+          background-size: cover;
+          background-repeat: no-repeat; }
+      html main #slider .content-wrapper {
+        text-align: left;
+        margin: 5% 10%;
+        font-size: 1.8rem; }
+      html main #slider .content {
+        width: 72%; }
+      html main #slider .first-slide, html main #slider .second-slide, html main #slider .third-slide, html main #slider .fourth-slide {
+        padding-top: 1%; }
+        html main #slider .first-slide h1, html main #slider .second-slide h1, html main #slider .third-slide h1, html main #slider .fourth-slide h1 {
+          margin-bottom: 2%;
+          font-style: normal;
+          font-weight: normal; }
+      html main #slider .first-slide {
+        background-image: url("../images/first-slide.png"); }
+        html main #slider .first-slide .content-wrapper {
+          width: 50%; }
+      html main #slider .second-slide {
+        background-image: url("../images/second-slide.png"); }
+        html main #slider .second-slide .content-wrapper {
+          width: 70%; }
+          html main #slider .second-slide .content-wrapper p {
+            width: 78%; }
+      html main #slider .third-slide {
+        background-image: url("../images/first-slide.png"); }
+      html main #slider .fourth-slide {
+        background-image: url("../images/second-slide.png"); }
+      html main #slider .orange-button, html main #slider .blue-button {
+        border: 2px solid white;
+        width: 250px;
+        height: 45px;
+        color: white;
+        font-size: 2rem;
+        margin-top: 2%; }
+      html main #slider .orange-button {
+        background-color: rgba(255, 156, 0, 0.5); }
+      html main #slider .blue-button {
+        background-color: rgba(79, 91, 111, 0.5); }

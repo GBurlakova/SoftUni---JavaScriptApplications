@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tree View</title>
+    <link rel="stylesheet" href="styles/treeViewPlugin.css"/>
+</head>
+<body>
+    <main>
+        <section>
+            <ul class="level-1">
+                <li class="item-i">
+                    <span>Art</span>
+                </li>
+                <li class="item-ii"><span>Nature</span>
+                    <ul class="level-2">
+                        <li class="item-a"><span>Animals</span></li>
+                        <li class="item-b"><span>Flowers</span>
+                            <ul class="level-3">
+                                <li class="item-1"><span>Rose</span></li>
+                                <li class="item-2"><span>Tulip</span></li>
+                                <li class="item-3"><span>Jasmine</span></li>
+                            </ul>
+                        </li>
+                        <li class="item-c"><span>Places</span></li>
+                    </ul>
+                </li>
+                <li class="item-iii"><span>Hobby</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="scripts/lib/jquery-2.1.1.min.js"></script>
+    <script src="scripts/js/tree-view.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.level-1').treeView();
+        });
+    </script>
+</body>
+</html>

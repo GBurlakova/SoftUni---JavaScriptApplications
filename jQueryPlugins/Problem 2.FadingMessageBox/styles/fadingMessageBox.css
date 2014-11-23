@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  html body {
+    width: 100%;
+    height: 100%;
+    background: #d2d2d2; }
+    html body main {
+      width: 50%;
+      height: 50%;
+      border: 1px solid #4096d6;
+      margin: 5% auto;
+      padding: 10%;
+      text-align: center; }
+      html body main button {
+        width: 45%;
+        height: 40px;
+        background-color: #4096d6;
+        border-radius: 5px;
+        border: 2px solid whitesmoke;
+        font-size: 2rem;
+        color: #464646;
+        outline: none; }
+        html body main button:active {
+          position: relative;
+          top: 3px;
+          outline: none; }
+        html body main button:focus {
+          outline: none; }
+      html body main .success-message, html body main .error-message {
+        width: 250px;
+        height: 50px;
+        font-size: 20pt;
+        padding: 2%;
+        opacity: 0;
+        margin: 2% auto;
+        border-radius: 5px; }
+      html body main .success-message {
+        background: #bcf5bc;
+        border: 1px solid #96c496; }
+      html body main .error-message {
+        background: #ff8181;
+        border: 1px solid #cc6767; }

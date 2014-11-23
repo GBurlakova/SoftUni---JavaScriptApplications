@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Element Insertion</title>
+    <link rel="stylesheet" href="styles/ElementInsertion.css"/>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="initial-element" id="initial-element">Initial Element</div>
+            <div>
+                <input type="radio" id="before-insertion" name="insertion-type" value="1"/>
+                <label for="before-insertion">Insert Before the Initial Element</label>
+                <input type="radio" id="after-insertion" name="insertion-type" value="2"/>
+                <label for="after-insertion">Insert After the Initial Element</label>
+                <input type="text" id="new-element" value="div"/>
+            </div>
+            <button id="submit-button">Insert</button>
+        </section>
+    </main>
+    <script src="scripts/lib/jquery-2.1.1.min.js"></script>
+    <script src="scripts/js/main-script.js"></script>
+</body>
+
+</html>

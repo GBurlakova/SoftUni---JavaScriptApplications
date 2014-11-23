@@ -1,0 +1,45 @@
+header {
+  font-weight: bold;
+  font-size: 62.5%;
+  text-align: center; }
+
+main {
+  width: 60%;
+  height: 250px;
+  margin: 25px auto;
+  border: 2px solid #435264;
+  border-radius: 5px;
+  background: rgba(230, 230, 230, 0.5);
+  text-align: center; }
+  main section {
+    width: 45%;
+    margin: 2.5% auto;
+    font-size: 1.2rem; }
+    main section input, main section button {
+      margin-top: 3%; }
+    main section ul {
+      width: 40%;
+      margin: 0 auto; }
+      main section ul li {
+        text-align: left; }
+    main section button {
+      display: block;
+      margin: 3% auto;
+      background: #8CACD2;
+      box-shadow: 5px 5px 1px 0 #435264;
+      -moz-box-shadow: 5px 5px 1px 0 #435264;
+      -webkit-shadow: 5px 5px 1px 0 #435264;
+      float: none;
+      width: 40%;
+      height: 35px;
+      border: 1px solid #b4b4b4;
+      color: white;
+      font-size: 110%; }
+    main section button:active, main section button:focus {
+      outline: none; }
+    main section button:active {
+      position: relative;
+      top: 3px;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-shadow: none; }

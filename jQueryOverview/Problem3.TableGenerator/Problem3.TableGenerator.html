@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Table Generator</title>
+    <link rel="stylesheet" href="styles/TableGenerator.css"/>
+</head>
+
+<body>
+    <main>
+        <section>
+            <textarea name="table-data" id="table-data" cols="70" rows="5">[{"manufacturer":"BMW","model":"E92 320i","year":2011,"price":50000,"class":"Family"},
+{"manufacturer":"Porsche","model":"Panamera","year":2012,"price":100000,"class":"Sport"},
+{"manufacturer":"Peugeot","model":"305","year":1978,"price":1000,"class":"Family"}]
+</textarea>
+            <button id="submit-button">Generate Table</button>
+            <table id="generated-table">
+                <thead id="table-header">
+                    <tr id="table-header-first-row"></tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="scripts/lib/jquery-2.1.1.min.js"></script>
+    <script src="scripts/js/main-script.js"></script>
+</body>
+
+</html>

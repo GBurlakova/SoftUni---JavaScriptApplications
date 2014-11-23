@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%;
+  background: #d2d2d2; }
+  html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  html main {
+    width: 40%;
+    height: 50%;
+    padding: 4%;
+    margin: 5% auto;
+    border-radius: 5px;
+    border: 1px solid #1db1f8;
+    font-size: 1.2rem;
+    background: rgba(252, 188, 110, 0.5); }
+    html main > section {
+      width: 65%;
+      margin: 0 auto; }
+      html main > section ul > li {
+        margin-left: 10%; }
+        html main > section ul > li span {
+          width: 70%;
+          display: block;
+          font-size: 1.9rem; }
+          html main > section ul > li span:hover {
+            cursor: pointer;
+            border-radius: 5px;
+            background: #fcbc6e; }

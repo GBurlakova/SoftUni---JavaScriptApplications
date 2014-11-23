@@ -1,0 +1,39 @@
+header {
+  font-weight: bold;
+  font-size: 62.5%;
+  text-align: center; }
+
+main {
+  width: 60%;
+  margin: 25px auto;
+  border: 2px solid #435264;
+  border-radius: 5px;
+  background: rgba(230, 230, 230, 0.5);
+  text-align: center; }
+  main section {
+    width: 30%;
+    margin: 8% auto; }
+    main section .initial-element {
+      width: 100%;
+      font-size: 1.5rem; }
+    main section input, main section button {
+      margin-top: 3%; }
+    main section button {
+      background: #8CACD2;
+      box-shadow: 5px 5px 1px 0 #435264;
+      -moz-box-shadow: 5px 5px 1px 0 #435264;
+      -webkit-shadow: 5px 5px 1px 0 #435264;
+      float: none;
+      width: 35%;
+      height: 35px;
+      border: 1px solid #b4b4b4;
+      color: white;
+      font-size: 110%; }
+    main section button:active, main section button:focus {
+      outline: none; }
+    main section button:active {
+      position: relative;
+      top: 3px;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-shadow: none; }

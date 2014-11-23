@@ -1,0 +1,49 @@
+header{
+  font-weight: bold;
+  font-size: 62.5%;
+  text-align: center;
+}
+
+main{
+  width: 60%;
+  margin: 25px auto;
+  border: 2px solid rgb(67,82,100);
+  border-radius: 5px;
+  background: rgba(230, 230, 230, 0.5);
+  text-align: center;
+  section{
+    width: 30%;
+    margin: 8% auto;
+    .initial-element{
+      width: 100%;
+      font-size: 1.5rem;
+    }
+    input, button{
+      margin-top: 3%;
+    }
+    button{
+      background: #8CACD2;
+      box-shadow: 5px 5px 1px 0 rgb(67,82,100);
+      -moz-box-shadow:  5px 5px 1px 0 rgb(67,82,100);
+      -webkit-shadow:  5px 5px 1px 0 rgb(67,82,100);
+      float: none;
+      width: 35%;
+      height: 35px;
+      border: 1px solid rgb(180, 180, 180);
+      color: rgb(255, 255, 255);
+      font-size: 110%;
+    }
+
+    button:active, button:focus{
+      outline: none;
+    }
+
+    button:active{
+      position: relative;
+      top: 3px;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-shadow: none;
+    }
+  }
+}
