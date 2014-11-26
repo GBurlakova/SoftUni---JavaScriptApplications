@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 65.2%;
+  background: #d2d2d2;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  html body main {
+    width: 70%;
+    margin: 5% auto;
+    font-size: 1.8rem; }
+    html body main table {
+      border-collapse: collapse; }
+      html body main table tr, html body main table td {
+        border: 1px solid #d2d2d2; }
+      html body main table td {
+        text-align: center; }
+      html body main table thead {
+        background: #5c9ccc; }
+      html body main table tbody tr:hover {
+        background: rgba(228, 112, 9, 0.7);
+        cursor: pointer; }
+    html body main .edit-delete-country, html body main .edit-delete-towns {
+      width: 40%; }
+      html body main .edit-delete-country:after, html body main .edit-delete-towns:after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both; }
+      html body main .edit-delete-country div, html body main .edit-delete-towns div {
+        margin-bottom: 2%; }
+        html body main .edit-delete-country div:after, html body main .edit-delete-towns div:after {
+          content: ".";
+          visibility: hidden;
+          display: block;
+          height: 0;
+          clear: both; }
+      html body main .edit-delete-country input, html body main .edit-delete-country select, html body main .edit-delete-towns input, html body main .edit-delete-towns select {
+        float: right;
+        width: 65%; }
+      html body main .edit-delete-country label, html body main .edit-delete-towns label {
+        float: left; }
+      html body main .edit-delete-country .buttons-container, html body main .edit-delete-towns .buttons-container {
+        margin-top: 5%;
+        text-align: center; }
+        html body main .edit-delete-country .buttons-container button, html body main .edit-delete-towns .buttons-container button {
+          width: 30%;
+          height: 12%;
+          outline: none;
+          background: #5c9ccc;
+          box-shadow: 5px 5px 1px 0 #435264;
+          -moz-box-shadow: 5px 5px 1px 0 #435264;
+          -webkit-shadow: 5px 5px 1px 0 #435264;
+          border: 1px solid #b4b4b4;
+          color: white; }
+          html body main .edit-delete-country .buttons-container button:focus, html body main .edit-delete-country .buttons-container button:active, html body main .edit-delete-towns .buttons-container button:focus, html body main .edit-delete-towns .buttons-container button:active {
+            outline: none; }
+          html body main .edit-delete-country .buttons-container button:active, html body main .edit-delete-towns .buttons-container button:active {
+            position: relative;
+            top: 3px;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-shadow: none; }
+    html body main .edit-delete-country {
+      margin: 3% auto; }
+    html body main .edit-delete-towns {
+      float: left; }
+    html body main .countries {
+      width: 75%;
+      margin: 2% auto; }
+    html body main .towns {
+      width: 40%;
+      float: right; }
+    html body main #tabs-2:after {
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both; }

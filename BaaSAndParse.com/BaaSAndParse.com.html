@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BaaSAndParse.com</title>
+    <link rel="stylesheet" href="styles/jquery-ui.min.css">
+    <link rel="stylesheet" href="styles/BaaSAndParse.com.css"/>
+    <script src="scripts/lib/jquery-2.1.1.min.js"></script>
+    <script src="scripts/lib/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $( "#tabs" ).tabs();
+        });
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1" id="tabs-1-link">Countries</a></li>
+                <li><a href="#tabs-2" id="tabs-2-link">Towns</a></li>
+            </ul>
+            <div id="tabs-1">
+                <h1>
+                    Countries
+                </h1>
+                <table id="countries" class="countries">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Continent</th>
+                            <th>Capital</th>
+                            <th>Population</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div id="edit-delete-add-country" class="edit-delete-country" data-class-name="Country">
+                    <div><label for="country-name">Name</label> <input type="text" id="country-name"/></div>
+                    <div><label for="continent">Continent</label> <input type="text" id="continent"/></div>
+                    <div><label for="capital">Capital</label> <input type="text" id="capital"/></div>
+                    <div><label for="population">Population</label> <input type="text" id="population"/></div>
+                    <div class="buttons-container">
+                        <button id="edit-country">Edit</button>
+                        <button id="delete-country">Delete</button>
+                        <button id="add-country">Add</button>
+                    </div>
+
+                </div>
+            </div>
+            <div id="tabs-2">
+
+                <div id="edit-delete-add-town" class="edit-delete-towns" data-class-name="Town">
+                    <div><label for="town-name">Name</label> <input type="text" id="town-name"/></div>
+                    <div>
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="">---</option>
+                        </select>
+                    </div>
+                    <div class="buttons-container">
+                        <button id="edit-town">Edit</button>
+                        <button id="delete-town">Delete</button>
+                        <button id="add-town">Add</button>
+                    </div>
+                </div>
+                <table id="towns" class="towns">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/js/main-script.js"></script>
+</body>
+
+</html>

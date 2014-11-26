@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 65.2%;
+  background: rgb(210, 210, 210);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  body{
+    main{
+      width: 70%;
+      margin: 5% auto;
+      font-size: 1.8rem;
+      table{
+        border-collapse: collapse;
+        tr, td{
+          border: 1px solid rgb(210, 210, 210);
+        }
+        td{
+          text-align: center;
+        }
+        thead{
+          background: rgb(92, 156, 204);
+        }
+        tbody{
+          tr{
+            &:hover{
+              background: rgba(228, 112, 9, 0.7);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .edit-delete-country,.edit-delete-towns{
+        width: 40%;
+
+        &:after{
+          content: ".";
+          visibility: hidden;
+          display: block;
+          height: 0;
+          clear: both;
+        }
+
+        div{
+          margin-bottom: 2%;
+          &:after{
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+          }
+        }
+
+        input, select{
+          float: right;
+          width: 65%;
+        }
+
+        label{
+          float: left;
+        }
+
+        .buttons-container{
+          margin-top: 5%;
+          text-align: center;
+          button{
+            width: 30%;
+            height: 12%;
+            outline: none;
+            background: rgb(92, 156, 204);
+            box-shadow: 5px 5px 1px 0 #435264;
+            -moz-box-shadow: 5px 5px 1px 0 #435264;
+            -webkit-shadow: 5px 5px 1px 0 #435264;
+            border: 1px solid #b4b4b4;
+            color: white;
+            &:focus, &:active{
+              outline: none;
+            }
+
+            &:active {
+              position: relative;
+              top: 3px;
+              box-shadow: none;
+              -moz-box-shadow: none;
+              -webkit-shadow: none; }
+          }
+        }
+      }
+
+      .edit-delete-country{
+        margin: 3% auto;
+      }
+
+      .edit-delete-towns{
+        float: left;
+      }
+
+      .countries{
+        width: 75%;
+        margin: 2% auto;
+      }
+
+      .towns{
+        width: 40%;
+        float: right;
+      }
+
+      #tabs-2:after{
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
+    }
+  }
+}
