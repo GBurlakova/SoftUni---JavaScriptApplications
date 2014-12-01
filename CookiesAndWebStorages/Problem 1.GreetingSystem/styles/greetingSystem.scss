@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+  font-size: 62.5%;
+  background: rgb(210, 210, 210);
+  body{
+    main{
+      width: 50%;
+      height: 200px;
+      margin: 10% auto;
+      border-radius: 5px;
+      border: 1px solid rgb(53, 53, 53);
+      text-align: center;
+      font-size: 3rem;
+      .message{
+        display: none;
+      }
+      .error{
+        margin-top: 2%;
+        color: red;
+      }
+      .user-data{
+        vertical-align: middle;
+        label{
+          display: block;
+        }
+        input{
+          display: block;
+          margin: 2% auto;
+          width: 25%;
+          padding: 1%;
+          height: 30px;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          &:focus{
+            outline: none;
+          }
+        }
+        button{
+          font-size: 1.8rem;
+          width: 20%;
+          height: 30px;
+          border-radius: 5px;
+          border: none;
+          background: #8CACD2;
+          box-shadow: 5px 5px 1px 0 rgb(67,82,100);
+          -moz-box-shadow:  5px 5px 1px 0 rgb(67,82,100);
+          -webkit-shadow:  5px 5px 1px 0 rgb(67,82,100);
+          &:active, &:focus{
+            outline: none;
+          }
+          &:active{
+            position: relative;
+            top: 3px;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-shadow: none;
+          }
+        }
+      }
+      .visits-count{
+        color: rgb(33, 33, 33);
+        margin-top: 8%;
+      }
+    }
+  }
+}

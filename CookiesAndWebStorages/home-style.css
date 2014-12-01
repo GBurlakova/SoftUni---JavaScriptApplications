@@ -1,0 +1,26 @@
+header{
+    font-weight: bold;
+    font-size: 250%;
+    text-align: center;
+}
+
+main{
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid rgb(67,82,100);
+    border-radius: 5px;
+    background: rgba(230, 230, 230, 0.5);
+    text-align: center;
+}
+
+main a{
+    text-decoration: none;
+    display: block;
+    font-size: 200%;
+    color: rgb(50, 50, 50);
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: rgb(67,82,100);
+}

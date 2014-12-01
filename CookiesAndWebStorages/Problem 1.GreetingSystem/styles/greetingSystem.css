@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+  background: #d2d2d2; }
+  html body main {
+    width: 50%;
+    height: 200px;
+    margin: 10% auto;
+    border-radius: 5px;
+    border: 1px solid #353535;
+    text-align: center;
+    font-size: 3rem; }
+    html body main .message {
+      display: none; }
+    html body main .error {
+      margin-top: 2%;
+      color: red; }
+    html body main .user-data {
+      vertical-align: middle; }
+      html body main .user-data label {
+        display: block; }
+      html body main .user-data input {
+        display: block;
+        margin: 2% auto;
+        width: 25%;
+        padding: 1%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        outline: none; }
+        html body main .user-data input:focus {
+          outline: none; }
+      html body main .user-data button {
+        font-size: 1.8rem;
+        width: 20%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        background: #8CACD2;
+        box-shadow: 5px 5px 1px 0 #435264;
+        -moz-box-shadow: 5px 5px 1px 0 #435264;
+        -webkit-shadow: 5px 5px 1px 0 #435264; }
+        html body main .user-data button:active, html body main .user-data button:focus {
+          outline: none; }
+        html body main .user-data button:active {
+          position: relative;
+          top: 3px;
+          box-shadow: none;
+          -moz-box-shadow: none;
+          -webkit-shadow: none; }
+    html body main .visits-count {
+      color: #212121;
+      margin-top: 8%; }

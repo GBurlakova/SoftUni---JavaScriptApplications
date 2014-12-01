@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+  background: #d2d2d2; }
+  html body main {
+    width: 60%;
+    margin: 10% auto;
+    border-radius: 5px;
+    border: 1px solid #353535;
+    text-align: center;
+    font-size: 3rem; }
+    html body main button {
+      margin-bottom: 1%;
+      font-size: 1.5rem;
+      width: 20%;
+      height: 35px;
+      border-radius: 5px;
+      border: none;
+      background: #8CACD2;
+      box-shadow: 5px 5px 1px 0 #435264;
+      -moz-box-shadow: 5px 5px 1px 0 #435264;
+      -webkit-shadow: 5px 5px 1px 0 #435264; }
+      html body main button:active, html body main button:focus {
+        outline: none; }
+      html body main button:active {
+        position: relative;
+        top: 3px;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-shadow: none; }
+    html body main .timer {
+      width: 30%;
+      height: 45px;
+      margin: 0 auto 3% auto;
+      border: 2px solid darkgreen;
+      border-radius: 5px;
+      color: #212121;
+      display: none; }
+    html body main .questions .title {
+      text-decoration: underline;
+      font-style: italic;
+      margin-bottom: 3%; }
+    html body main .questions .options {
+      width: 50%;
+      margin: 2% auto; }
+      html body main .questions .options > div {
+        padding: 1%; }
+        html body main .questions .options > div:after {
+          content: ".";
+          visibility: hidden;
+          display: block;
+          height: 0;
+          clear: both; }
+        html body main .questions .options > div input[type='radio'] {
+          width: 20px;
+          height: 20px;
+          margin-right: 2%;
+          float: left; }
+        html body main .questions .options > div label {
+          float: left; }
+    html body main .questions .correctAnswer {
+      background: darkgreen;
+      border-radius: 5px; }
+    html body main .questions .incorrectAnswer {
+      background: red;
+      border-radius: 5px; }
+    html body main .questions .selected {
+      background: aliceblue;
+      border-radius: 5px; }
