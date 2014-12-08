@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SPAApplicationsAndApplicationsArchitecture</title>
+    <link rel="stylesheet" href="styles/consumingRemoteDataWithJSAndREST.css"/>
+</head>
+<body>
+    <main>
+        <h1>On-line library</h1>
+        <div id="books" class="books"></div>
+        <div id="edit-book" class="edit-book" data-visible="false">
+            <h2>Edit book</h2>
+            <label for="book-title">Book Title</label><input type="text" id="book-title"/>
+            <label for="book-author">Book Author</label><input type="text" id="book-author"/>
+            <label for="book-isbn">Book ISBN</label><input type="text" id="book-isbn"/>
+            <button id="save-changes">Save changes</button>
+        </div>
+        <div class="new-book">
+            <h2>New Book</h2>
+            <label for="new-book-title">Book Title</label><input type="text" id="new-book-title"/>
+            <label for="new-book-author">Book Author</label><input type="text" id="new-book-author"/>
+            <label for="new-book-isbn">Book ISBN</label><input type="text" id="new-book-isbn"/>
+            <button id="add-new-book">Add book</button>
+        </div>
+    </main>
+    <script src="scripts/lib/jquery-2.1.1.min.js"></script>
+    <script src="scripts/lib/mustache.js"></script>
+    <script src="scripts/lib/q.js"></script>
+    <script src="scripts/js/dataHandler.js"></script>
+    <script src="scripts/js/main-script.js"></script>
+</body>
+</html>

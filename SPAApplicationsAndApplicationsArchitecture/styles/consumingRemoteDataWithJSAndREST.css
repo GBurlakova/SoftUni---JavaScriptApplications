@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: 62.5%; }
+
+html {
+  width: 100%; }
+  html body {
+    background: url("../images/Books-Background.jpg") no-repeat center top fixed;
+    background-size: cover; }
+    html body main {
+      width: 65%;
+      margin: 5% auto;
+      border-radius: 5px;
+      background-color: rgba(210, 210, 210, 0.7);
+      padding: 2%; }
+      html body main:after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both; }
+      html body main h1, html body main h2 {
+        text-align: center; }
+      html body main h1 {
+        border-bottom: 1px solid #212121; }
+      html body main button {
+        width: 20%;
+        height: 25px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        margin: 1%;
+        font-size: 1.1rem;
+        background: #8CACD2;
+        box-shadow: 5px 5px 1px 0 #435264;
+        -moz-box-shadow: 5px 5px 1px 0 #435264;
+        -webkit-shadow: 5px 5px 1px 0 #435264;
+        float: none;
+        color: white;
+        padding: 1%; }
+        html body main button:focus, html body main button:active {
+          outline: none; }
+        html body main button:active {
+          position: relative;
+          top: 3px;
+          box-shadow: none;
+          -moz-box-shadow: none;
+          -webkit-shadow: none; }
+      html body main .books {
+        display: inline-block;
+        width: 49%;
+        margin-top: 1%; }
+        html body main .books .book {
+          width: 100%;
+          border-radius: 7px;
+          border: 1px solid #353535;
+          margin: 2% 0;
+          font-size: 1.3rem;
+          background: aliceblue;
+          padding: 2%;
+          float: left; }
+          html body main .books .book .title {
+            text-align: center;
+            margin-bottom: 1%; }
+      html body main .edit-book {
+        display: inline-block;
+        width: 49%;
+        float: right;
+        border-radius: 7px;
+        border: 1px solid #353535;
+        margin: 2% 0;
+        font-size: 1.3rem;
+        background: aliceblue;
+        padding: 1%; }
+        html body main .edit-book button {
+          width: 35%;
+          height: 35px; }
+        html body main .edit-book label {
+          display: inline-block;
+          width: 40%; }
+        html body main .edit-book input {
+          color: black;
+          width: 58%;
+          height: 30px;
+          border-radius: 5px;
+          margin: 1%;
+          border: 1px solid #353535;
+          outline: none;
+          padding: 1%; }
+      html body main .new-book {
+        display: inline-block;
+        width: 49%;
+        float: right;
+        border-radius: 7px;
+        border: 1px solid #353535;
+        margin: 2% 0;
+        font-size: 1.3rem;
+        background: aliceblue;
+        padding: 1%; }
+        html body main .new-book button {
+          width: 35%;
+          height: 35px; }
+        html body main .new-book label {
+          display: inline-block;
+          width: 40%; }
+        html body main .new-book input {
+          color: black;
+          width: 58%;
+          height: 30px;
+          border-radius: 5px;
+          margin: 1%;
+          border: 1px solid #353535;
+          outline: none;
+          padding: 1%; }
