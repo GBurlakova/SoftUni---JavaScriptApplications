@@ -133,40 +133,42 @@ $(function() {
     });
 
     $deleteCountryButton.on('click', function () {
-        var objectToDelete = $(this).parent().attr('data-id');
-        var className = $(this).parent().attr('data-class-name');
+        var objectToDelete = $operationsOverCountriesField.attr('data-id');
+        var className = $operationsOverCountriesField.attr('data-class-name');
 
         deleteObject(className, objectToDelete);
     });
 
     $editCountryButton.on('click', function () {
-        var objectToUpdate = $(this).parent().attr('data-id');
-        var className = $(this).parent().attr('data-class-name');
-        var countryName = $(this).parent().find('#country-name').val();
-        var continent = $(this).parent().find('#continent').val();
-        var capital = $(this).parent().find('#capital').val();
-        var population = $(this).parent().find('#population').val();
+        var objectToUpdate = $operationsOverCountriesField.attr('data-id');
+        var className = $operationsOverCountriesField.attr('data-class-name');
+        var countryName = $operationsOverCountriesField.find('#country-name').val();
+        var continent = $operationsOverCountriesField.find('#continent').val();
+        var capital = $operationsOverCountriesField.find('#capital').val();
+        var population = $operationsOverCountriesField.find('#population').val();
         var data = {
             Name: countryName,
             Continent: continent,
             Capital: capital,
             Population: Number(population)
         };
+
         updateObject(className, objectToUpdate, data);
     });
 
     $addCountryButton.on('click', function () {
-        var className = $(this).parent().attr('data-class-name');
-        var countryName = $(this).parent().find('#country-name').val();
-        var continent = $(this).parent().find('#continent').val();
-        var capital = $(this).parent().find('#capital').val();
-        var population = $(this).parent().find('#population').val();
+        var className = $operationsOverCountriesField.attr('data-class-name');
+        var countryName = $operationsOverCountriesField.find('#country-name').val();
+        var continent = $operationsOverCountriesField.find('#continent').val();
+        var capital = $operationsOverCountriesField.find('#capital').val();
+        var population = $operationsOverCountriesField.find('#population').val();
         var data = {
             Name: countryName,
             Continent: continent,
             Capital: capital,
             Population: Number(population)
         };
+
         addObject(className, data);
     });
 
@@ -233,16 +235,16 @@ $(function() {
     });
 
     $deleteTownButton.on('click', function () {
-        var objectToDelete = $(this).parent().attr('data-id');
-        var className = $(this).parent().attr('data-class-name');
+        var objectToDelete = $operationsOverTownsField.attr('data-id');
+        var className = $operationsOverTownsField.attr('data-class-name');
 
         deleteObject(className, objectToDelete);
     });
 
     $editTownButton.on('click', function () {
-        var objectToUpdate = $(this).parent().attr('data-id');
-        var className = $(this).parent().attr('data-class-name');
-        var townName = $(this).parent().find('#town-name').val();
+        var objectToUpdate = $operationsOverTownsField.attr('data-id');
+        var className = $operationsOverTownsField.attr('data-class-name');
+        var townName = $operationsOverTownsField.find('#town-name').val();
         var countryId = $countriesSelect.val();
         var country = {"__type":"Pointer","className":"Country","objectId":countryId};
 
@@ -255,8 +257,8 @@ $(function() {
     });
 
     $addTownButton.on('click', function () {
-        var className = $(this).parent().attr('data-class-name');
-        var townName = $(this).parent().find('#town-name').val();
+        var className = $operationsOverTownsField.attr('data-class-name');
+        var townName = $operationsOverTownsField.find('#town-name').val();
         var country = $countriesSelect.val();
         var data = {
             Name: townName,
